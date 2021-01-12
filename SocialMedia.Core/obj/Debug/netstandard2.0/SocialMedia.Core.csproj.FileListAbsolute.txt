@@ -1,0 +1,9 @@
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\bin\Debug\netstandard2.0\SocialMedia.Core.deps.json
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\bin\Debug\netstandard2.0\SocialMedia.Core.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\bin\Debug\netstandard2.0\SocialMedia.Core.pdb
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\obj\Debug\netstandard2.0\SocialMedia.Core.AssemblyInfoInputs.cache
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\obj\Debug\netstandard2.0\SocialMedia.Core.AssemblyInfo.cs
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\obj\Debug\netstandard2.0\SocialMedia.Core.csproj.CoreCompileInputs.cache
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\obj\Debug\netstandard2.0\SocialMedia.Core.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\obj\Debug\netstandard2.0\SocialMedia.Core.pdb
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Core\obj\Debug\netstandard2.0\SocialMedia.Core.csprojAssemblyReference.cache
