@@ -35,10 +35,12 @@ namespace SocialMedia.Api
             services.AddControllers().AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-            });
+            }).ConfigureApiBehaviorOptions(options => {
+                options.SuppressModelStateInvalidFilter = true;
+            };
             services.AddDbContext<SocialMediaContext>(options
                 => options.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
-    
+        
             services.AddTransient<IPostRepository, PostRepository>();
         }
 
