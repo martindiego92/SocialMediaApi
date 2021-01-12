@@ -13,8 +13,10 @@ namespace SocialMedia.Infrastucture.Filters
         {
             if(!context.ModelState.IsValid)
             {
-                context.Result = new BadRequestObjectResult
+                context.Result = new BadRequestObjectResult(context.ModelState);
+                return;
             }
+            await next();
         }
     }
 }

@@ -68,3 +68,9 @@ C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\obj\Debug\netcoreapp3.1\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastucture.Data;
+using SocialMedia.Infrastucture.Filters;
 using SocialMedia.Infrastucture.Repositories;
 using System;
 using System.Collections.Generic;
@@ -36,12 +38,19 @@ namespace SocialMedia.Api
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             }).ConfigureApiBehaviorOptions(options => {
-                options.SuppressModelStateInvalidFilter = true;
-            };
+               // options.SuppressModelStateInvalidFilter = true;
+            });
             services.AddDbContext<SocialMediaContext>(options
                 => options.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
         
             services.AddTransient<IPostRepository, PostRepository>();
+
+            services.AddMvc(options =>
+            {
+                options.Filters.Add<ValidationFilter>();
+            }).AddFluentValidation(options => {
+                options.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
