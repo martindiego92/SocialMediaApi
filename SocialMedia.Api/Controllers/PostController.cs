@@ -20,9 +20,9 @@ namespace SocialMedia.Api.Controllers
     {
         private readonly IPostService _postService;
         private readonly IMapper _mapper;
-        public PostController(IPostService postRepository, IMapper mapper)
+        public PostController(IPostService postService, IMapper mapper)
         {
-            _postService = postRepository;
+            _postService = postService;
             _mapper = mapper;
         }
         [HttpGet]
@@ -54,7 +54,7 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> Put(int id , PostDto postDto)
         {
             var post = _mapper.Map<Post>(postDto);
-            post.PostId = id;
+            post.Id = id;
             var result = await _postService.UpdatePost(post);
             var response = new ApiResponse<bool>(result);
             return Ok(response);

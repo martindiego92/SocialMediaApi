@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SocialMedia.Core.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace SocialMedia.Core.Data
 {
-    public partial class User
+    public partial class User : BaseEntity
     {
         public User()
         {
@@ -11,7 +12,7 @@ namespace SocialMedia.Core.Data
             Posts = new HashSet<Post>();
         }
 
-        public int UserId { get; set; }
+      
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

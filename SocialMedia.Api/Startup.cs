@@ -10,9 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Core.Services;
 using SocialMedia.Infrastucture.Data;
 using SocialMedia.Infrastucture.Filters;
 using SocialMedia.Infrastucture.Repositories;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,8 +44,10 @@ namespace SocialMedia.Api
             });
             services.AddDbContext<SocialMediaContext>(options
                 => options.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
-        
-            services.AddTransient<IPostRepository, PostRepository>();
+            services.AddTransient<IPostService, PostService>();
+         
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddMvc(options =>
             {
