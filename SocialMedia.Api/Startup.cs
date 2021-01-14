@@ -2,6 +2,7 @@ using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,8 +14,10 @@ using SocialMedia.Core.Interfaces;
 using SocialMedia.Core.Services;
 using SocialMedia.Infrastucture.Data;
 using SocialMedia.Infrastucture.Filters;
+using SocialMedia.Infrastucture.Interfaces;
+using SocialMedia.Infrastucture.Options;
 using SocialMedia.Infrastucture.Repositories;
-
+using SocialMedia.Infrastucture.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,15 +46,27 @@ namespace SocialMedia.Api
 
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
             }).ConfigureApiBehaviorOptions(options => {
                // options.SuppressModelStateInvalidFilter = true;
             });
+            
+            services.Configure<PaginationOptions>(Configuration.GetSection("Pagination"));
+           
+            
             services.AddDbContext<SocialMediaContext>(options
                 => options.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
             services.AddTransient<IPostService, PostService>();
          
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<IUriService>(provider => 
+            {
+                var accesor = provider.GetRequiredService<HttpContextAccessor>();
+                var request = accesor.HttpContext.Request;
+                var absoluteUri = string.Concat(request.Scheme, "://", request.Host.ToUriComponent());
+                return new UriService(absoluteUri);
+            });
 
             services.AddMvc(options =>
             {
