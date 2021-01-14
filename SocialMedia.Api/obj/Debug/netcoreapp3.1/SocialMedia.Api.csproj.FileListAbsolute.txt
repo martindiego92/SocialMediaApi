@@ -74,3 +74,9 @@ C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\obj\Debug\netcoreapp3.1\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\SocialMedia.Api.xml
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\obj\Debug\netcoreapp3.1\SocialMedia.Api.xml
