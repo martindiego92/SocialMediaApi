@@ -80,3 +80,4 @@ C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\SocialMedia.Api.xml
 C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\obj\Debug\netcoreapp3.1\SocialMedia.Api.xml
+C:\Users\Martin\Desktop\mvcCore\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

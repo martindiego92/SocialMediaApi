@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lAE8lwsZLXqDak++5q5WJuC6EPwj5sYVq5S/BhB68QHp5W6yeU0q8kRXkuyVNeuKt/L+IUuApzAKdJCJg3L4rw==",
+  "dgSpecHash": "mrUcMj6vaUWjqPU5ulzlEOk4Qkfhv88BFtyuyo+BdH0sWnJYwzXVMGoPIrLPSWVcbw6lrPxxoR2SZKoMllRyaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Martin\\Desktop\\mvcCore\\SocialMedia\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Martin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.3.0\\fluentvalidation.dependencyinjectionextensions.9.3.0.nupkg.sha512",
     "C:\\Users\\Martin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Martin\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.11\\microsoft.aspnetcore.authentication.jwtbearer.3.1.11.nupkg.sha512",
     "C:\\Users\\Martin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Martin\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\Martin\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
